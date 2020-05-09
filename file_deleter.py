@@ -1,6 +1,7 @@
 import os
 import fnmatch
 import platform
+import distro
 
 def main():
     files = [item for item in os.listdir('.')]
@@ -19,5 +20,8 @@ def main():
                         './' + duplicate_file)
 
 if __name__ == '__main__':
-    if platform.platform() == 'Linux':
-        main()
+    if platform.system() != 'Linux':
+        print("Support currently not available for your platform.")
+    else:
+        if distro.linux_distribution()[0] == 'Linux Mint':
+            main()
