@@ -11,7 +11,7 @@ Support for other Linux distributions will be added soon.
 
 ## Version
 
-version 0.0.2
+version 0.2.0
 
 ## Requirements
 
@@ -27,6 +27,6 @@ want to delete.
 * Open terminal.
 * Run ```python3 file_deleter.py``` to delete duplicate files.
 
-## What's new in 0.0.2
+## What's new in 0.2.0
 
 * Included code to test whether the machine is running Linux Mint.
